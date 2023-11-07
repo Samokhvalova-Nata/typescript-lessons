@@ -5,7 +5,7 @@
 type P = string | number;
 
 function getPromise (): Promise<P[]> {
-  return new Promise((resolve) => {
+  return new Promise<P[]>((resolve) => {
     resolve(['Text', 50]);
   });
 }
